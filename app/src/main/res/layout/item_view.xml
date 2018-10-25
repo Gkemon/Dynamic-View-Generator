@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="100dp"
     android:layout_margin="10dp"
     android:id="@+id/main_layout_item"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+>
 
-    <Button
+    <TextView
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:text="Button" />
 
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Time"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:layout_editor_absoluteX="27dp" />
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:text="Time" />
 
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
